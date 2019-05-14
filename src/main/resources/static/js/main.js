@@ -22,6 +22,7 @@ function uploadFile(file) {
         } else {
             fileUploadSuccess.style.display = "none";
             fileUploadError.innerHTML = (response && response.message) || "Some Error Occurred";
+			fileUploadError.style.display = "block";
         }
     };
 
